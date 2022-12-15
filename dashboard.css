@@ -1,0 +1,92 @@
+body {
+    font-size: 1.350rem;
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgb(130, 250, 156);
+  }
+  
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+  
+  .sidebar-sticky {
+    height: calc(100vh - 48px);
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: rgb(130, 250, 156);
+  }
+  
+  .sidebar .nav-link.active {
+    color: rgb(130, 250, 156);
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .95rem;
+    padding-bottom: .95rem;
+    background-color: rgb(130, 250, 156);
+    box-shadow: inset -1px 0 0 rgb(130, 250, 156);
+  }
+  
+  .navbar .navbar-toggler {
+    top: .95rem;
+    right: .95rem;
+  }
+  
+  .navbar .form-control {
+    padding: .95rem 1rem;
+  }
+  
+  .form-control-dark {
+    color: rgb(130, 250, 156);
+    background-color: rgb(130, 250, 156);
+    border-color: rgb(130, 250, 156);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgb(130, 250, 156);
+  }
